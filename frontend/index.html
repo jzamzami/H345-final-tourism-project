@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourisMadEasy</title>
+    <script src="views.js"></script>
+    <link rel="stylesheet" href="views.css" />
+</head>
+
+        <body>
+            <!-- start of pages -->
+            <div id="views-container">
+        
+            <!-- start of front page -->
+            <div id="frontPage" class="pageView">
+                <div id="userIdContainer">
+                <label for="userIdInput">Enter User ID:</label>
+                <input type="text" id="userIdInput" placeholder="e.g., jzam04">
+                <button id="setUserIdBtn">Set User ID</button>
+                </div>
+                <h1>Welcome to TourisMadEasy!</h1>
+                <div class="itinerary-container">
+                <p>The number #1 site for all your tourism desires!!</p>
+                <img src="images/أين-تقع-نافورة-الملك-فهد.jpg" alt="king fahad fountain" class="fact-img">
+                </div>
+                <div id="information-container">
+                <p>Popular Tourist Attractions:</p>
+                <ol class="list">
+                    <li class="fact-item">
+                    Historical Jeddah (Al-Balad)
+                    <img src="images/Al-Balad.jpg" alt="albalad" class="fact-img hover-img">
+                    </li>
+                    <li class="fact-item">
+                    Bike Roundabout
+                    <img src="images/images.jpeg" alt="bike roundabout" class="fact-img hover-img">
+                    </li>
+                    <li class="fact-item">
+                    Building in the Shape of a Ship (RIP)
+                    <img src="images/EnpbOF3XEAIeK9X.jpg" alt="rip habibi" class="fact-img hover-img">
+                    </li>
+                </ol>
+                </div>
+                <input type="button" id="frontPageButton" value="I'm ready to search!">
+                <input type="button" id="deleteAllButton" value="delete my data please!!">
+            </div>
+            <!-- end of Front Page -->
+        
+            <!-- start of specifying Info Page -->
+                <div id="specifyingInfoPage" class="pageView">
+                    <h1>Please specify your search:</h1>
+                    <div id="outer-columns">
+                    <div class="itinerary-container">
+                        <input type="text" id="search-bar" placeholder="Search for a destination or keyword..."/>
+                        <button id="search-btn">refine your search...</button>
+                    </div>
+                    <div id="lower-box">
+                        <div id="method-selector">
+                        <h4>More questions for refining your search:</h4>
+                        <ul>
+                            <li>
+                            How old are you?
+                            <input type="text" id="age" placeholder="ex; i am 18 years of age" />
+                            </li>
+                            <li>
+                            Countries or Cities Previously Visited:
+                            <input type="text" id="travel-history" placeholder="ex; Dunstable MA" />
+                            </li>
+                            <li>
+                            What is your budget?
+                            <input type="text" id="travel-budget" placeholder="ex; 1000$" />
+                            </li>
+                            <li>
+                            What general locations are you interested in?
+                            <input type="text" id="location-interest" placeholder="ex; beaches, museums, markets" />
+                            </li>
+                            <li>
+                            How long are you travelling for?
+                            <input type="text" id="travel-duration" placeholder="ex; 1 week, 1 day, 1 hour :O" />
+                            </li>
+                            <li>
+                            What do you care about most when travelling?
+                            <input type="text" id="travel-priorities" placeholder="ex; food (yumm), cultural events, entertainment" />
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <input type="button" id="specifyingInfoPageButton" value="Generate What Places I should visit!" />
+                    <input type="button" id="backHomeButton" value="Take me home!" />
+                </div>
+              
+            <!-- end of specifying info page -->
+        
+            <!-- start of generated itinerary Page -->
+            <div id="generatedItineraryPage" class="pageView">
+                <h1>Generated Itinerary Page</h1>
+                <div class="container">
+                <div class="itinerary-container">
+                    <p>Based on your input, we think this is the best itinerary for you:</p>
+                    <p>You should visit Jeddah, Saudi Arabia :D</p>
+                    <img src="images/1751789.jpg" alt="jeddah" class="fact-img">
+                </div>
+                </div>
+                <div id="locations-container">
+                <p>Here are the details for your ideal visit:</p>
+                <ol id="locations-list" class="list">
+                    <li>you should go to Al-Balad</li>
+                    <li>visit Red Sea Mall!</li>
+                    <li>try seafood restaurants in Dahaban</li>
+                    <li>stay at the Ritz-Carlton by the sea!</li>
+                </ol>
+                </div>
+                <div id="related-cities-container">
+                <p>Here are a few related cities:</p>
+                <ol class="list">
+                    <li class="related-city">
+                    Riyadh, Saudi Arabia
+                    <img src="images/images (3).jpeg" alt="riyadh" class="fact-img">
+                    </li>
+                    <li class="related-city">
+                    Dammam, Saudi Arabia
+                    <img src="images/image_1708582380_WVxzNSIFWM5toU19zrE5EsEkVyGErY9jvKxXB4UB.webp" alt="dammam" class="fact-img">
+                    </li>
+                    <li class="related-city">
+                    Taif, Saudi Arabia
+                    <img src="images/images (2).jpeg" alt="taif" class="fact-img">
+                    </li>
+                </ol>
+                </div>
+                <input type="button" id="generatedItineraryPageButton" value="I want to specify my travel details again!">
+            </div>
+            <!-- end of generated itinerary page -->
+        
+            <!-- loading screen -->
+            <div id="loadingScreen" class="pageView">
+                <div class="wrapper">
+                <div class="gooseContainer">
+                    <div class="progress-bar" id="progressBar">
+                    <img src="images/goose.gif" alt="Goose" class="goose" id="goose" />
+                    <div class="progress" id="progress">0%</div>
+                    </div>
+                    <div class="loading-text">Loading, please wait...</div>
+                </div>
+                </div>
+                <input type="button" id="loadingScreenButton" value="See itinerary generated">
+            </div>
+            <!-- end of loading screen -->
+            
+        </div> 
+            <!-- end of pages -->
+        </body>
+</html>      

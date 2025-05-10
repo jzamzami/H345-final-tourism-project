@@ -1,0 +1,40 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "contributors": [
+    "Sonia Liao",
+    "AJ Young",
+    "Phuong Le",
+    "Joud Omar H Zamzami"
+  ],
+  "scripts": {
+    "start-server": "http-server ./frontend/ -p 3000"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "http-server": "^14.1.1",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
+  }
+}
